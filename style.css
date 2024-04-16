@@ -1,0 +1,205 @@
+/* colors of the web */
+/* white: #FFFFFF */
+/* text color: #333333 */
+/* btn color: #DDFE95 */
+/* btn hover: #FFFFFF */
+/* cream color: #ECEBE3 */
+/* green color: #0C4449 */
+/* yellow color: #EEFEC8 */
+/* green text  color: #2B3F00 */
+
+/* img src: https://framerusercontent.com/images/LdAYNJAKzxwCa3qF64G6vMzfwM.png */
+/* img src: https://framerusercontent.com/images/gSuVif3x9rXhY6Jf35Lnyt2UsA.webp */
+/* img src: https://framerusercontent.com/images/mxcT012ACXxP279mWVpKP5x2pWw.png?scale-down-to=1024 */
+/* img src: https://framerusercontent.com/images/dGPudoHPiY6Rf5vol5fAWQLZwy0.png?scale-down-to=1024 */
+/* img src: https://framerusercontent.com/images/VZZGxh5yv5qEvQTuz4r8NOrrXI.png?scale-down-to=1024 */
+/* img src: https://framerusercontent.com/images/v800QJ74VDfHnQQBcdmLouSH5Y.png?scale-down-to=512 */
+/* img src: https://framerusercontent.com/images/0ywALDYQ9tPSoOj2Yj5kltQtdE.png?scale-down-to=512 */
+/* img src: https://framerusercontent.com/images/EeYTIKl7FWRds5LWqcLvIY4asc.svg */
+/* img src: https://framerusercontent.com/images/mIQrrfrzi9EVF5qXnYxErqumOeA.svg */
+/* img src: https://framerusercontent.com/images/3WMiMqQLneeChMRsMjKvOn07Vo.svg */
+/* img src: https://framerusercontent.com/images/Zk6qkHRXEzUBJZcatsRDp9dDK3o.png */
+/* img src: https://framerusercontent.com/images/F6LHg7EdlYgmYmNqP0abFduWw.png */
+/* img src: https://framerusercontent.com/images/pP7pC52m2JO7rST8PO5txIHovao.png?scale-down-to=2048 */
+
+/* video src: https://framerusercontent.com/assets/Occ7ycWFiqKx8dGMYE7DxtT8Om8.mp4 */
+/* video src: https://framerusercontent.com/assets/NaSej4JlqYbr1zO8bWMoAdXoTws.mp4 */
+/* video src: https://framerusercontent.com/assets/ajuV0vcADUBKAnjynwEmXxnntk.mp4 */
+
+/* img src: https://framerusercontent.com/images/VHvxv6bmHkkedD1pj9W4dblZpwU.png */
+/* img src: https://framerusercontent.com/images/w1f1Dn28jkELIVse7ykOYu4Jysw.svg */
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.ri-menu-line {
+  display: none;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  padding: 30px 250px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .header__left {
+    display: inline-flex;
+    align-items: center;
+    gap: 100px;
+
+    h2 {
+      color: #333333;
+      font-weight: 500;
+    }
+
+    ul {
+      display: inline-flex;
+      gap: 30px;
+
+      li a {
+        color: #333333;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .header__right {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+
+    ul {
+      display: inline-flex;
+      gap: 30px;
+
+      li a {
+        color: #333333;
+        font-weight: 300;
+      }
+    }
+
+    .btn {
+      background-color: #ddfe95;
+      color: #333333;
+      padding: 20px 30px;
+      border-radius: 30px;
+      font-weight: 300;
+
+      i {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 20px;
+  .hero__content {
+    background: url("https://framerusercontent.com/images/LdAYNJAKzxwCa3qF64G6vMzfwM.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    height: 80vh;
+
+    padding: 200px 300px;
+
+    h1 {
+      font-family: "Crimson Pro", serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 18px;
+      max-width: 600px;
+    }
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 30px 50px;
+  }
+
+  .hero__content {
+    padding: 200px 100px !important;
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header__left {
+    ul li {
+      display: none;
+    }
+  }
+
+  .header__right {
+    ul li {
+      display: none;
+    }
+
+    .btn {
+      display: none;
+    }
+  }
+
+  .ri-menu-line {
+    display: block;
+    font-size: 22px;
+    color: #333333;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-align: center;
+      font-size: 60px !important;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px !important;
+    }
+  }
+}
