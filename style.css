@@ -465,6 +465,7 @@ body {
   margin-top: 100px;
   border-top: 1px solid #333333;
   padding-top: 50px;
+  padding-bottom: 100px;
 
   display: flex;
   flex-direction: column;
@@ -533,6 +534,87 @@ body {
           display: block;
         }
       }
+    }
+  }
+}
+
+.team {
+  background-color: #ecebe3;
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-family: "Crimson Pro", sans-serif;
+      font-size: 50px;
+      font-weight: 300;
+      color: #333333;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #ddfe95;
+      padding: 10px 30px;
+      border-radius: 30px;
+      color: #333333;
+      font-weight: 300;
+
+      i {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .team__items {
+    display: flex;
+    gap: 20px;
+    .team__item:nth-child(2) {
+      background: url("https://framerusercontent.com/images/F6LHg7EdlYgmYmNqP0abFduWw.png");
+      background-position: center;
+      background-position: cover;
+    }
+    .team__item:nth-child(3) {
+      background: url("https://framerusercontent.com/images/pP7pC52m2JO7rST8PO5txIHovao.png?scale-down-to=2048");
+      background-position: center;
+      background-size: cover;
+    }
+    .team__item {
+      background: url("https://framerusercontent.com/images/Zk6qkHRXEzUBJZcatsRDp9dDK3o.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      margin-top: 50px;
+      flex: 0.5;
+      height: 750px;
+      border-radius: 10px;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+
+      .text {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        color: #fff;
+
+        h4 {
+          font-family: "Crimson Pro", sans-serif;
+          font-size: 36px;
+          font-weight: 400;
+          padding-bottom: 10px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .team__item.active {
+      flex: 1;
     }
   }
 }
@@ -632,5 +714,12 @@ body {
 
   .system__content {
     flex-direction: column;
+  }
+
+  .team {
+    .team__items {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 }
