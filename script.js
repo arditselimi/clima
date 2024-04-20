@@ -46,9 +46,3 @@ workers.forEach((e) => {
     video.style.opacity = "0";
   });
 });
-
-const menuIcon = document.querySelector(".menu");
-
-menuIcon.addEventListener("click", () => {
-  menuIcon.style.color = "red";
-});
